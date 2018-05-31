@@ -18,27 +18,9 @@ var Commands = []cli.Command{
 		Flags:  []cli.Flag{},
 	},
 	{
-		Name:   "help",
-		Usage:  "",
-		Action: command.CmdHelp,
-		Flags:  []cli.Flag{},
-	},
-	{
-		Name:   "version",
-		Usage:  "",
-		Action: command.CmdVersion,
-		Flags:  []cli.Flag{},
-	},
-	{
 		Name:   "list",
 		Usage:  "",
 		Action: command.CmdList,
-		Flags:  []cli.Flag{},
-	},
-	{
-		Name:   "config",
-		Usage:  "",
-		Action: command.CmdConfig,
 		Flags:  []cli.Flag{},
 	},
 }

@@ -1,8 +1,24 @@
 package command
 
-import "github.com/codegangsta/cli"
+import (
+	"fmt"
+	"math/rand"
+	"time"
 
+	"github.com/codegangsta/cli"
+	"github.com/valbeat/whatday"
+)
+
+// CmdList prints article
 func CmdList(c *cli.Context) {
-	// Write your code here
+	t := time.Now()
+	articles, err := whatday.NewArticles(t)
+	if err != nil {
+		fmt.Println(err)
+	}
 
+	rand.Seed(time.Now().UnixNano())
+	for _, article := range articles {
+		fmt.Printf("## %s\n> %s\n", article.Title, article.Text)
+	}
 }

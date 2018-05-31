@@ -1,7 +1,22 @@
 package command
 
-import "testing"
+import (
+	"flag"
+	"testing"
+
+	"github.com/codegangsta/cli"
+)
 
 func TestCmdRandom(t *testing.T) {
-	// Write your code here
+	app := cli.NewApp()
+	set := flag.NewFlagSet("", 0)
+	c := cli.NewContext(app, set, nil)
+
+	command := cli.Command{
+		Action: CmdRandom,
+	}
+	err := command.Run(c)
+	if err != nil {
+		t.Error(err)
+	}
 }
