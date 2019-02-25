@@ -1,10 +1,12 @@
 # whatday-cli
 
-
-
 ## Description
+A command line tool for displaying "Today is what day"
 
 ## Usage
+```
+$ whatday
+```
 
 ## Install
 
