@@ -5,7 +5,7 @@ import (
 	"math/rand"
 	"time"
 
-	"github.com/codegangsta/cli"
+	"github.com/urfave/cli"
 	"github.com/valbeat/whatday"
 )
 
