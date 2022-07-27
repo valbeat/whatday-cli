@@ -11,7 +11,7 @@ func main() {
 	app := cli.NewApp()
 	app.Name = Name
 	app.Version = Version
-	app.Author = "valbeat"
+	app.Author = "Takuma Kajikawa"
 	app.Email = ""
 	app.Usage = ""
 
