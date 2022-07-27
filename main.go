@@ -19,5 +19,8 @@ func main() {
 	app.Commands = Commands
 	app.CommandNotFound = CommandNotFound
 
-	app.Run(os.Args)
+	err := app.Run(os.Args)
+	if err != nil {
+		return
+	}
 }
