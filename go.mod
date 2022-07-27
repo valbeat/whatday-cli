@@ -5,7 +5,6 @@ go 1.17
 require (
 	github.com/urfave/cli v1.22.5
 	github.com/valbeat/whatday v0.0.0-20210713033724-018c001b4197
-	github.com/valbeat/whatday-cli v0.0.0-20211011040540-44ae76d091e9
 )
 
 require (
