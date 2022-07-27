@@ -13,7 +13,7 @@ $ whatday
 To install, use `go get`:
 
 ```bash
-$ go get -d github.com/valbeat/whatday-cli
+$ go install github.com/valbeat/whatday-cli@latest
 ```
 
 ## Contribution
