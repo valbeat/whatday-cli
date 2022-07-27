@@ -1,4 +1,4 @@
-module valbeat/whatday-cli
+module github.com/valbeat/whatday-cli
 
 go 1.17
 
